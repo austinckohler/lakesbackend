@@ -1,8 +1,8 @@
-class FishsController < ApplicationController
+class FishController < ApplicationController
     
     def index 
-        @fishs = Fish.all
-        render json: @fishs, include: [:lake]
+        @fish = Fish.all
+        render json: @fish, include: [:lake]
     end
 
     def show 
